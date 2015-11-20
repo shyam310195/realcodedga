@@ -704,10 +704,10 @@ if get(handles.crossLinear,'Value') == 1
             if child1> xmax || child1 < xmin
                 child1 = matingPool(i,1);
             end
-            if child2> xmax || child1 < xmin
+            if child2> xmax || child2 < xmin
                 child2 = matingPool(i+1,1);
             end
-            if child3> xmax || child1 < xmin
+            if child3> xmax || child3 < xmin
                 child3 = matingPool(i,1);
             end
             fitness1 = subs(y, x,child1);
@@ -736,7 +736,7 @@ elseif get(handles.crossBlend,'Value') == 1
             if child1> xmax || child1 < xmin
                 child1 = matingPool(i,1);
             end
-            if child2> xmax || child1 < xmin
+            if child2> xmax || child2 < xmin
                 child2 = matingPool(i+1,1);
             end
             nextgen(i,1) = child1;
